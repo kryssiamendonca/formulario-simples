@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+ <meta name="viewport" content="width-device-width, initial-scale-'.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+</head>
+<body>
+    <!--Div Título e Subtítulo da Página-->
+    <div>
+        <h1 id="titulo">Formulário de cadastro</h1>
+            <p id="subtitulo">Complete com as suas informações:</p>
+    </div>
+<!--Construção de formulário-->
+<form>
+<!--Agrupador de campos-->
+   <fieldset class="grupo">
+    <!--Div nome -->
+    <div class="campo">
+      <label for="nome"><strong>Nome</strong></label>
+        <input type="text" name="nome" id="nome" required> <!--não será autorizado enviar o formulário se não estiver preenchido (Required)-->
+    </div>
+    <!--Div Sobrenome-->
+    <div class="campo">
+    <label for="sobrenome"><strong>Sobrenome</strong></label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+    </div>
+    </fieldset>
+    <!-- Div de email -->
+   <div class="campo">
+      <label for="email"><strong>Email</strong></label>
+        <input type="email" name="eamil" id="email" required>
+    </div>
+    <!--Div de gênero-->
+    <div class="campo"> 
+    <label for="serionidade"><strong>Gênero</strong></label>
+        <select id="serionidade"> <!--lista de opção (serionidade)-->
+           <option selected disabled value="">Selecione</option>
+            <option>Feminino</option>
+            <option>Masculino</option>
+            <option>Transgenero</option>
+        </select>    
+</div> 
+    <!--Div de seleção estado-->
+<div class="campo"> 
+  <label for="serionidade"><strong>Selecione Seu Estado de Origem</strong></label>
+    <select id="serionidade">
+    <option selected disabled value="">Selecione</option>
+   <option>Paraná</option>
+   <option>Acre</option>
+   <option>Alagoas</option> 
+   <option>Amapá</option>
+   <option>Amazonas</option>
+   <option>Bahia</option>   
+   <option>Ceará</option>
+   <option>Distrito Federal</option>
+   <option>Espírito Santo</option>
+   <option>Goiás</option>
+   <option>Maranhão</option>
+   <option>Mato Grosso</option>
+   <option>Mato Grosso do Sul</option>
+   <option>Minas Gerais</option>
+   <option>Pará</option>
+   <option>Paraíba</option>
+   <option>Paraná</option>
+   <option>Pernambuco</option>
+   <option>Piauí</option>
+   <option>Rio de Janeiro</option>
+   <option>Rio Grande do Norte</option>
+   <option>Rio Grande do Sul</option>
+   <option>Rondônia  </option>
+   <option>Roraima</option>
+   <option>Santa Catarina</option>
+   <option>São Paulo</option>
+   <option>Sergipe</option>
+   <option>Tocantins</option>
+        </select>
+    </div>
+        <!--Div de seleção de conhecimento-->
+        <div class="campo">
+            <label><strong>Selecione sua área de conhecimento?</strong></label>
+            <label> 
+               <input type="radio" name="frontend" value="frontend">Front-End
+            </label>
+        </div>
+    <div class="campo">
+        <label>
+            <input type="radio" name="backend" value="backend">Back-End 
+        </label>
+    </div>     
+<div class="campo">
+    <label> 
+        <input type="radio" name="fullstack" value="fullstack">Full Stack
+    </label>
+</div>    
+    <!--checkbox - opções de conhecimento --> 
+<fieldset class="grupo">
+    <div class="conhecimento"> 
+        <label><strong>Selecione as tecnologias do seu dia a dia:</strong></label><br>
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label>
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+        <label for="tecnologia2">CSS</label>
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+        <label for="tecnologia3">JavaScript</label>
+        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Java">
+        <label for="tecnologia4">Java</label>
+        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Phyton">
+        <label for="tecnologia5">Phyton</label><br>
+        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="PHP">
+        <label for="tecnologia6">PHP</label>
+        <input type="checkbox" id="tecnologia7" name="tecnologia7" value="C#">
+        <label for="tecnologia7">C#</label>
+        <input type="checkbox" id="tecnologia8" name="tecnologia8" value="SQL#">
+        <label for="tecnologia8">SQL</label>
+    </div>
+</fieldset>
+    <!--Area de texto-->
+    <div class="campo">
+       <label><strong>Conte-nos um pouco da sua experiência</strong></label>
+            <div>
+                <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+    
+        <button class="botao" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
